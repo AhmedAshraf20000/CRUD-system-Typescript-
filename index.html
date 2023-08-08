@@ -35,6 +35,7 @@
           class="block border border-black w-full rounded-md outline-none mb-2 caret-black px-4 py-1 placeholder:opacity-100 placeholder:capitalize placeholder:text-sm border-opacity-50 focus:text-black"
           placeholder="Enter the name of the product"
           required
+          autofocus
         />
       </div>
       <div class="relative container w-full">
@@ -74,8 +75,8 @@
           >product condition:</label
         >
         <select
-          name="category"
-          id="category"
+          name="condition"
+          id="condition"
           required
           class="block cursor-pointer border border-black w-full rounded-md outline-black mb-2 caret-black px-4 py-1 placeholder:opacity-100 placeholder:capitalize placeholder:text-sm border-opacity-50 focus:text-black"
         >
@@ -87,16 +88,19 @@
       </div>
       <div id="buttons-container" class="container mx-auto text-center mt-3 space-x-3">
         <button
+        id="add"
           class="mx-auto text-white bg-green-600 rounded-md py-1 px-2 hover:bg-white hover:text-green-600 hover:border hover:border-green-600"
         >
           Add Product
         </button>
         <button
+        id="delete-all"
           class="mx-auto text-white bg-red-600 rounded-md py-1 px-2 hover:bg-white hover:text-red-600 hover:border hover:border-red-600"
         >
           Delete All Products
         </button>
         <button
+        id="update"
           class="mx-auto text-white bg-yellow-500 rounded-md py-1 px-2 hover:bg-white hover:text-yellow-500 hover:border hover:border-yellow-500 hidden"
         >
           Update Product
@@ -110,7 +114,7 @@
         placeholder="Search for a product by name..."
       />
     </form>
-    <ul id="list-header" class="mt-5 mx-auto">
+    <ul id="list-header" class="mt-5 mx-auto hidden">
       <li class="font-semibold">Index</li>
       <li class="font-semibold">name</li>
       <li class="font-semibold">price</li>
