@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="search"]::-webkit-search-cancel-button {
+  @apply cursor-pointer;
+}
+ul {
+  @apply container mx-auto  flex;
+}
+ul li {
+  @apply basis-1/6 text-center capitalize;
+}
+.product{
+    @apply bg-[#eee] mx-auto mt-2 py-2 rounded-md
+}
+.action{
+    @apply space-x-3
+}
+.action i{
+    @apply cursor-pointer
+}
+.action i:first-child{
+    @apply text-yellow-500
+}
+.action i:last-child{
+    @apply text-red-500
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Products System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="stylesheet"
+      href=".\node_modules\@fortawesome\fontawesome-free\css\all.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-roboto">
+    <header
+      class="container mx-auto text-3xl font-semibold opacity-80 text-center mt-3 text-black"
+    >
+      Products System
+    </header>
+    <form class="container mx-auto">
+      <div class="relative container w-full">
+        <label for="name" class="block capitalize text-lg opacity-80 mb-2"
+          >product name:</label
+        >
+        <input
+          type="search"
+          name="name"
+          id="name"
+          class="block border border-black w-full rounded-md outline-none mb-2 caret-black px-4 py-1 placeholder:opacity-100 placeholder:capitalize placeholder:text-sm border-opacity-50 focus:text-black"
+          placeholder="Enter the name of the product"
+          required
+        />
+      </div>
+      <div class="relative container w-full">
+        <label for="price" class="block capitalize text-lg opacity-80 mb-2"
+          >product price:</label
+        >
+        <input
+          type="number"
+          name="price"
+          id="price"
+          class="block border border-black w-full rounded-md outline-none mb-2 caret-black px-4 py-1 placeholder:opacity-100 placeholder:capitalize placeholder:text-sm border-opacity-50 focus:text-black"
+          placeholder="Enter the price of the product"
+          required
+        />
+      </div>
+      <div class="relative container w-full">
+        <label for="category" class="block capitalize text-lg opacity-80 mb-2"
+          >product category:</label
+        >
+        <select
+          name="category"
+          id="category"
+          required
+          class="block cursor-pointer border border-black w-full rounded-md outline-black mb-2 caret-black px-4 py-1 placeholder:opacity-100 placeholder:capitalize placeholder:text-sm border-opacity-50 focus:text-black"
+        >
+          <option value="none"></option>
+          <option value="electronics">Electronics</option>
+          <option value="fashion">Fashion</option>
+          <option value="automotive">Automotive</option>
+          <option value="appliances">Appliances</option>
+          <option value="music">Musical Instruments</option>
+          <option value="games">Games</option>
+        </select>
+      </div>
+      <div class="relative container w-full">
+        <label for="condition" class="block capitalize text-lg opacity-80 mb-2"
+          >product condition:</label
+        >
+        <select
+          name="category"
+          id="category"
+          required
+          class="block cursor-pointer border border-black w-full rounded-md outline-black mb-2 caret-black px-4 py-1 placeholder:opacity-100 placeholder:capitalize placeholder:text-sm border-opacity-50 focus:text-black"
+        >
+          <option value="none"></option>
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+          <option value="bad">Bad</option>
+        </select>
+      </div>
+      <div id="buttons-container" class="container mx-auto text-center mt-3">
+        <button
+          class="mx-auto text-white bg-green-600 rounded-md py-1 px-2 hover:bg-white hover:text-green-600 hover:border hover:border-green-600"
+        >
+          Add Product
+        </button>
+        <button
+          class="mx-auto text-white bg-red-600 rounded-md py-1 px-2 hover:bg-white hover:text-red-600 hover:border hover:border-red-600"
+        >
+          Delete All Products
+        </button>
+      </div>
+      <input
+        type="search"
+        name="search"
+        id="search"
+        class="block border border-black w-full rounded-md outline-none mt-3 caret-black px-4 py-1 placeholder:opacity-100 placeholder:capitalize placeholder:text-sm border-opacity-50 focus:text-black"
+        placeholder="Search for a product by name..."
+      />
+    </form>
+    <ul id="list-header" class="mt-5 mx-auto">
+      <li class="font-semibold">Index</li>
+      <li class="font-semibold">name</li>
+      <li class="font-semibold">price</li>
+      <li class="font-semibold">category</li>
+      <li class="font-semibold">condition</li>
+      <li class="font-semibold">actions</li>
+    </ul>
+    <!-- <ul class="product">
+      <li>1</li>
+      <li>allal</li>
+      <li>allala</li>
+      <li>llala</li>
+      <li>aa;</li>
+      <li class="action">
+        <i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i>
+      </li>
+    </ul> -->
+    <script src="./dist/main.js"></script>
+  </body>
+</html>
