@@ -11,18 +11,21 @@ ul {
 ul li {
   @apply basis-1/6 text-center capitalize;
 }
-.product{
-    @apply bg-[#eee] mx-auto mt-2 py-2 rounded-md
+.product {
+  @apply bg-[#eee] mx-auto mt-2 py-2 rounded-md;
 }
-.action{
-    @apply space-x-3
+.product:last-of-type {
+  @apply mb-4;
 }
-.action i{
-    @apply cursor-pointer
+.action {
+  @apply space-x-3;
 }
-.action i:first-child{
-    @apply text-yellow-500
+.action i {
+  @apply cursor-pointer;
 }
-.action i:last-child{
-    @apply text-red-500
+.action i:first-child {
+  @apply text-yellow-500;
+}
+.action i:last-child {
+  @apply text-red-500;
 }
